@@ -1,0 +1,18 @@
+//current working directory as git repo
+git init
+
+//---------local version control---------
+//add file
+git add <filename>
+git add -A
+git add .
+//commit to local repo
+git commit <-m 'tag'>
+
+//---------backup local repo to remote repo--------
+git remote add origin https://github.com/touchpig/reponame.git
+
+//---------push local changes to remote repo----------
+git push origin master/branch-name
+
+
