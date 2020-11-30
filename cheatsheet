@@ -5,6 +5,7 @@ git init
 //add file
 git add <filename>
 git add -A
+//apply changes
 git add .
 //commit to local repo
 git commit -m 'message'
