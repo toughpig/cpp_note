@@ -1,0 +1,14 @@
+{
+    "files.associations": {
+        "chrono": "cpp",
+        "forward_list": "cpp",
+        "random": "cpp",
+        "array": "cpp",
+        "*.tcc": "cpp",
+        "deque": "cpp",
+        "list": "cpp",
+        "string": "cpp",
+        "vector": "cpp",
+        "ostream": "cpp"
+    }
+}
