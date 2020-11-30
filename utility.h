@@ -23,4 +23,5 @@
 #include<iostream>
 #include<cstring>
 #include<cstdlib>
+#include<memory>
 using namespace std;
