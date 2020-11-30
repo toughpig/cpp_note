@@ -1,3 +1,4 @@
+#pragma once
 //STL提供
 //C++98 容器,迭代器,算法
 //C++11 正则表达式regex,rand/thread/async/future/time
