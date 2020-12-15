@@ -7,6 +7,7 @@
 //错误检查的任务交给使用者
 //基本不使用异常,容易产生不明确行为
 
+#include<cassert>
 #include<vector>
 #include<list>
 #include<forward_list>
@@ -21,7 +22,10 @@
 #include<random>
 #include<chrono>
 #include<iostream>
+#include<fstream>
+#include<sstream>
 #include<cstring>
 #include<cstdlib>
 #include<memory>
+
 using namespace std;
