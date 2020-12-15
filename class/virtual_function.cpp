@@ -4,7 +4,7 @@
 //构造函数和析构函数中调用的虚函数,其多态特性还未生成,调用自身实现的该函数
 //如果类中含有虚函数或者纯虚函数,析构函数是public的,那么析构函数应该定义为virtual
 //如果不希望外部使用者调用基类析构函数,用protected隐藏起来,这样就强制在派生类中调用基类析构函数
-#include "utility.h"
+#include "../utility.h"
 
 class Parent{
     private:
