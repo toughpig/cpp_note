@@ -16,4 +16,7 @@ git remote add origin https://github.com/touchpig/reponame.git
 //---------push local changes to remote repo----------
 git push origin master/branch-name
 
+//---------pull remote branch to local branch---------
+git pull
+
 

@@ -8,12 +8,12 @@ class Ruleofthree{//C++98
         char* str;
 
     public:
-        Ruleofthree(const char* str){//动态分配需要写析构函数释放,系统基本类型的默认析构函数啥也不做
+        // Ruleofthree(const char* str){//动态分配需要写析构函数释放,系统基本类型的默认析构函数啥也不做
             this->str = new char(strlen(str)+1);
         }
         ~Ruleofthree(){
             delete[] str;
-        }
+        // }
         Ruleofthree(const Ruleofthree& obj){//定义拷贝构造函数需要重载赋值=,不然拷贝指针有bug
             str = new char(strlen(obj.str)+1);
             strcpy(str,obj.str);
