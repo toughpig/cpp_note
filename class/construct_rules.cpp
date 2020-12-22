@@ -1,4 +1,4 @@
-#include "utility.h"
+#include "../utility.h"
 
 //在构造函数中try catch,一旦实例化完成,不用再去检查是否损坏
 //swap()中也不要抛出异常

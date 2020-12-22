@@ -16,7 +16,12 @@ git remote add origin https://github.com/touchpig/reponame.git
 //---------push local changes to remote repo----------
 git push origin master/branch-name
 
-//---------pull remote branch to local branch---------
-git pull
+
+//---------log in---------
+git config --global user.email "wh19@mail.ustc.edu.cn"
+git config --global user.name "toughpig"
+
+//
+git might ignore invisiable files' changes, have to manually "git add .config" for example.
 
 

@@ -6,10 +6,13 @@
 			"label": "g++9",
 			"command": "/bin/g++-9",
 			"args": [
+				"-std=c++11",
+				"-L /usr/local/lib",
 				"-g",
 				"${file}",
 				"-o",
-				"${fileDirname}/build/${fileBasenameNoExtension}"
+				"${workspaceFolder}/build/${fileBasenameNoExtension}",
+				"-lfmt"
 			],
 			"options": {
 				"cwd": "/bin"
