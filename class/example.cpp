@@ -17,6 +17,7 @@ public:
         return out;
     }
     void process(string str);
+
 private:
     string name = "unnamed";
     vector<pair<string,string> > data;
@@ -28,6 +29,22 @@ void Entity::process(string ss)
     size_t a,b;
     a=b=0;
     string first,second;
+    if(a<len){
+        while(a<len&&ss[a]==' ') a++;
+        b=a;
+        while(b<len&&ss[b]!=' ') b++;
+        first = ss.substr(a,b-a);
+        a=b;
+        while(a<len&&ss[a]==' ') a++;
+        b=a;
+        while(b<len&&ss[b]!=' ') b++;
+        second = ss.substr(a,b-a);
+        a=b;
+        if(first == "key")
+            name = second;
+        else
+            data.emplace_back(make_pair(first,second));
+    }
     while(a<len){
         while(a<len&&ss[a]==' ') a++;
         b=a;
@@ -43,24 +60,71 @@ void Entity::process(string ss)
     }
 }
 
+/*
+**********database************
+*/
+vector<Entity> database;
+
+void printall(const vector<Entity>& e)
+{
+    for(const auto& a : e)
+    {
+        cout<<a;
+    }
+}
+
+void build_date(string filename)
+{
+    ifstream ifst(filename, ifstream::in);
+    string temp;
+    if(ifst){
+        while(getline(ifst,temp)){
+            database.emplace_back(Entity());
+            database.back().process(temp);
+        }
+    }
+    else
+    {
+            cerr<<"couldn't open file "<<filename<<endl;
+    }
+}
 
 int main(int argc, char* argv[])
 {
-    vector<Entity> e;
-    for(auto p = argv+1; p!=argv+argc; p++){
-        ifstream ifst(*p, ifstream::in);
-        string temp;
-        if(ifst){
-            while(getline(ifst,temp)){
-                e.emplace_back(Entity());
-                e.back().process(temp);
-                cout<<e.back();
-            }
+    string cmd;
+    while(getline(cin,cmd))
+    {
+        if(cmd=="print")
+        {
+            printall(database);
+        }
+        else if(cmd=="build")
+        {
+            cout<<"input filename\n";
+            string filename;
+            getline(cin,filename);
+            build_date(filename);
+        }
+        else if(cmd=="insert")
+        {
+            cout<<"input filename\n";
+            string filename;
+            getline(cin,filename);
+            string temp;
+            getline(cin,temp);
+            ofstream ofst(filename,fstream::app);
+            ofst.write((temp+'\n').c_str(),temp.size()+1);
+            ofst.close();
+        }
+        else if(cmd=="quit")
+        {
+            break;
         }
         else
         {
-                cerr<<"couldn't open file "<<*p<<endl;
+            cout<<"invalid input format\n";
         }
+        
     }
     return 0;
 }

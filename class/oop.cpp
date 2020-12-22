@@ -57,6 +57,7 @@ public:
 private:
     //base& can call derived private override vir-func
     //what the fuck
+    //prof that C++ is not a pure oop language
     virtual double net_price(size_t n){return n>=atleast? n*(1-discount)*price : n*price;}
     double discount;
     size_t atleast;

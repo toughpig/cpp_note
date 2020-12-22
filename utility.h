@@ -7,6 +7,10 @@
 //错误检查的任务交给使用者
 //基本不使用异常,容易产生不明确行为
 
+#include<fmt/core.h>
+#include<fmt/ranges.h>
+#include<fmt/os.h>
+
 #include<cassert>
 #include<vector>
 #include<list>
