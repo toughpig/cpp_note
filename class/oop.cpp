@@ -42,7 +42,11 @@ public:
     //default variable-table polymorphism
     //use base's default variable-table
     virtual void test_default_var(int var=1){cout<<var<<endl;}
-
+    friend ostream& operator<<(ostream& out, const Bulk_quote& bq)
+    {
+        out<<bq.isbn()<<endl;
+        return out;
+    }
 
     Bulk_quote() = default;
     //within derived class, can use base's protected possessions
@@ -72,6 +76,7 @@ int main(){
     Quote& qq = bq;
     print_all(bq,100);
     print_all(qq,100);
+    cout<<bq;
     return 0;
 }
 
