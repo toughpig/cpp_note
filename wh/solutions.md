@@ -1,0 +1,11 @@
+- c++reference https://zh.cppreference.com/w/cpp/language/lambda
+- ubuntu-chinese ubuntu20.04-GooglePinyin中文输入法 https://blog.csdn.net/a805607966/article/details/105874756
+- linux-kernel-viewer linux-kernel-view bootlin
+- c内联汇编 内联汇编格式 https://www.jianshu.com/p/57fef17149ae
+- character-device 手动创建设备节点(b/c-主设备号-从设备号) https://blog.csdn.net/chuanzhilong/article/details/65936746
+- fmt fmtlib/fmt c++20
+- dynamic-link-library -L----->*/lib
+- linux-kernel-rc rc release-candidate
+- lts lts long-time support
+- binary-operation
+

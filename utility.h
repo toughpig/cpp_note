@@ -1,4 +1,4 @@
-#pragma once
+//#pragma once
 //STL提供
 //C++98 容器,迭代器,算法
 //C++11 正则表达式regex,rand/thread/async/future/time
@@ -10,6 +10,8 @@
 #include<fmt/core.h>
 #include<fmt/ranges.h>
 #include<fmt/os.h>
+
+#include<QtCore>
 
 #include<cassert>
 #include<vector>
