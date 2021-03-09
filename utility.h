@@ -11,7 +11,7 @@
 #include<fmt/ranges.h>
 #include<fmt/os.h>
 
-#include<QtCore>
+
 
 #include<cassert>
 #include<vector>

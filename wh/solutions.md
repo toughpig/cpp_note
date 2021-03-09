@@ -8,4 +8,5 @@
 - linux-kernel-rc rc release-candidate
 - lts lts long-time support
 - binary-operation
+- sudo command not found (sudo-path differs with user-path) -> sudo env PATH=$PATH cmd.sh
 
