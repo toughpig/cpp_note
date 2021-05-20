@@ -9,6 +9,7 @@ gcc -o main main.o test.o other.so --> executable file
 
 # lib path
 # 不会自动遍历/加载所有目录下的库文件，需要手动添加需要的库名
+# -lkkk 会在lib目录下搜索动态链接库kkk.so/静态链接库kkk.a
 -L/path/to/lib-dir
 -lfmt
 -luv --> find libuv.so* in lib-dir

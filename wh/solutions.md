@@ -9,4 +9,5 @@
 - lts lts long-time support
 - binary-operation
 - sudo command not found (sudo-path differs with user-path) -> sudo env PATH=$PATH cmd.sh
+- task_struct https://blog.csdn.net/weixin_39094034/article/details/112908195?utm_medium=distribute.pc_relevant.none-task-blog-baidujs_title-5&spm=1001.2101.3001.4242
 

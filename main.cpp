@@ -4,9 +4,14 @@ class B
 {
     public:
         B(int _a):a(_a){}
+        
+        ~B(){
+            cout<<"~B()"<<endl;
+        }
         int geta(){return a;}
     private:
         int a=1;
+        
 };
 
 class D:public B
@@ -60,5 +65,11 @@ int main(int argc, char* argv[]){
         }
         
     }
+    {
+        B* bb = new B(1);
+
+    }
+    cout<<"B released"<<endl;
+
 }
 

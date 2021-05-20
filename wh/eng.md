@@ -14,6 +14,8 @@ For programs which require high performance this is a major roadblock as other a
 #当某个线程一旦阻塞
 When the blocking function gets invoked in the thread
 
+#handle是不透明的数据结构，其中对应的类型uv_TYPE_t中的type指定了handle的使用目的
+Handles are opaque structs named as uv_TYPE_t where type signifies what the handle is used for
 
 
 ```

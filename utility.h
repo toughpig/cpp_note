@@ -12,7 +12,8 @@
 #include<fmt/os.h>
 
 
-
+#include<unistd.h>
+#include<wait.h>
 #include<cassert>
 #include<vector>
 #include<list>
