@@ -7,8 +7,11 @@ git add <filename>
 git add -A
 #apply changes
 git add .
+git add src/*
 #commit to local repo
 git commit -m 'message'
+#reset to certain commit, delete all commits behind.
+git reset --hard commit_id
 ```
 * backup local repo to remote repo
 ```bash
